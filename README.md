@@ -32,7 +32,7 @@ A clean, multithreaded Python port scanner for network reconnaissance and securi
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/port-scanner.git
+git clone https://github.com/joieux/port-scanner.git
 cd port-scanner
 
 # Run the quick setup
@@ -53,7 +53,7 @@ python3 port_scanner.py -t 192.168.1.1
 ### Clone and Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/port-scanner.git
+git clone https://github.com/joieux/port-scanner.git
 cd port-scanner
 chmod +x port_scanner.py setup.sh
 ./setup.sh
@@ -162,7 +162,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 ### Development Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/port-scanner.git
+git clone https://github.com/joieux/port-scanner.git
 cd port-scanner
 # Make your changes
 # Test thoroughly
@@ -185,8 +185,8 @@ The scanner uses Python's socket library to attempt TCP connections to specified
 ## Support
 
 - 📖 [Documentation](docs/)
-- 🐛 [Report Bug](https://github.com/YOUR-USERNAME/port-scanner/issues)
-- 💡 [Request Feature](https://github.com/YOUR-USERNAME/port-scanner/issues)
+- 🐛 [Report Bug](https://github.com/hjoieux/port-scanner/issues)
+- 💡 [Request Feature](https://github.com/joieux/port-scanner/issues)
 
 ## License
 
