@@ -10,7 +10,7 @@
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/port-scanner.git
+git clone https://github.com/joieux/port-scanner.git
 cd port-scanner
 ```
 
