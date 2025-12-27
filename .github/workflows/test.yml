@@ -1,0 +1,39 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Check Python version
+      run: python --version
+    
+    - name: Lint with basic checks
+      run: |
+        python -m py_compile port_scanner.py
+    
+    - name: Test help command
+      run: |
+        python port_scanner.py --help
+    
+    - name: Test localhost scan
+      run: |
+        python port_scanner.py -t 127.0.0.1 -p 80
+      continue-on-error: true
